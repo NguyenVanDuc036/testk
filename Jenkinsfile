@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Authenticate') {
             steps {
-                sh "docker login -u nguyenduc036 -p dckr_pat_yhLRqU7oPPfusyUvFZ41WVhq-sU"
+                withDockerRegistry(credentialsId: 'dockerhub', url: 'https://index.docker.io/v1/') {}
             }
         }
     }
