@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Authenticate') {
             steps {
-                sh "echo -n ${env.DOCKER_TOKEN} | docker login -u ${env.DOCKER_USER} --password-stdin"
+                sh "docker login -u nguyenduc036 -p dckr_pat_yhLRqU7oPPfusyUvFZ41WVhq-sU"
             }
         }
     }
