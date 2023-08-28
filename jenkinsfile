@@ -1,0 +1,10 @@
+pipeline {
+    agent any
+    stages {
+        stage('Authenticate') {
+            steps {
+                sh "docker login -u nguyenduc036 -p dckr_pat_jMSENjB-m7FaGXcFuKX_i3uCvoo"
+            }
+        }
+    }
+}
